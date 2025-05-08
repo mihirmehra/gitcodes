@@ -367,3 +367,156 @@ $ ^C
 
 Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
 $
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ gh auth login
+? Where do you use GitHub?  [Use arrows to move, type to filter]
+> GitHub.com
+  Other
+could not prompt: Incorrect function.
+You appear to be running in MinTTY without pseudo terminal support.
+To learn about workarounds for this error, run:  gh help mintty
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mihirmehra/gitcodes.git'
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ ^C
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git add .
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mihirmehra/gitcodes.git'
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git branch
+  login
+* master
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$
+Adgit branchP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+
+git: 'branc' is not a git command. See 'git --help'.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git add .
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git commit -m 'main commit'
+On branch main
+nothing to commit, working tree clean
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 1023 bytes | 146.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/mihirmehra/gitcodes.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git checkout master
+Switched to branch 'master'
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/mihirmehra/gitcodes/pull/new/master
+remote:
+To https://github.com/mihirmehra/gitcodes.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ touch readme.md
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (master)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git merge master
+Already up to date.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git add .
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   readme.md
+
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git add .
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git-commands-struture.html
+        new file:   readme.md
+
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git commit -m 'added readme'
+[main 511cb49] added readme
+ 2 files changed, 371 insertions(+)
+ create mode 100644 git-commands-struture.html
+ create mode 100644 readme.md
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.44 KiB | 3.44 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mihirmehra/gitcodes.git
+   46db3c6..511cb49  main -> main
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$ git pull
+Already up to date.
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~/Desktop/b-code/GIT Version Control System (main)
+$
